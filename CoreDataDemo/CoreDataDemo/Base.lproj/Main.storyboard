@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb9-4Q-dhy">
+                                <rect key="frame" x="142" y="318.5" width="90" height="30"/>
+                                <state key="normal" title="Save Articles"/>
+                                <connections>
+                                    <action selector="saveArticles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oxq-PM-Bzd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLr-Ol-0dW">
+                                <rect key="frame" x="124.5" y="380.5" width="126" height="30"/>
+                                <state key="normal" title="Show articles' title"/>
+                                <connections>
+                                    <action selector="showArticles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dm3-gH-Ftq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-fv-dy8">
+                                <rect key="frame" x="121.5" y="256.5" width="131" height="30"/>
+                                <state key="normal" title="Remove all Articles"/>
+                                <connections>
+                                    <action selector="removeArticles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dj7-7N-05O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb9-4Q-dhy" firstAttribute="top" secondItem="TaO-fv-dy8" secondAttribute="bottom" constant="32" id="2oN-72-ljh"/>
+                            <constraint firstItem="xb9-4Q-dhy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6eS-S9-9zc"/>
+                            <constraint firstItem="HLr-Ol-0dW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tds-wd-8oK"/>
+                            <constraint firstItem="xb9-4Q-dhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="daG-KC-uTR"/>
+                            <constraint firstItem="HLr-Ol-0dW" firstAttribute="top" secondItem="xb9-4Q-dhy" secondAttribute="bottom" constant="32" id="fc2-Tw-8GP"/>
+                            <constraint firstItem="TaO-fv-dy8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hoj-0G-ZNz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
